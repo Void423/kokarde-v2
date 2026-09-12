@@ -33,7 +33,7 @@ export const KokardeCard: React.FC<KokardeCardProps> = ({ data }) => {
             </p>
           </div>
           {/* Garis Ganda Pembatas Kop */}
-          <div className="border-b border-black mt-0.5 mb-[1px]" />
+          <div className="border-b border-black mt-0.5 mb-1px" />
           <div className="border-b border-black" />
         </div>
 
@@ -52,7 +52,7 @@ export const KokardeCard: React.FC<KokardeCardProps> = ({ data }) => {
           <img
             src="/logo-bukittinggi.png"
             alt="Logo Bukittinggi"
-            className="h-8 object-contain"
+            className="h-22 object-cover"
             onError={(e) => {
               e.currentTarget.onerror = null;
               e.currentTarget.src =
@@ -74,13 +74,11 @@ export const KokardeCard: React.FC<KokardeCardProps> = ({ data }) => {
         </div>
 
         {/* Detail Peserta */}
-        <div className="my-0.5 px-0.5 text-[8.5px] font-bold leading-snug space-y-0.5">
-          <div className="flex">
+        <div className="my-0.5 px-0.5  font-bold leading-snug space-y-0.5 text-[12px]">
+          <div className="flex text-[12px]">
             <span className="w-12 tracking-wider">NAMA</span>
             <span className="mr-1">:</span>
-            <span className="font-black uppercase truncate">
-              {data.namaSiswa}
-            </span>
+            <span className="font-black uppercase">{data.namaSiswa}</span>
           </div>
           <div className="flex">
             <span className="w-12">KELAS</span>
