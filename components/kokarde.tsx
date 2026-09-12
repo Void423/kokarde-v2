@@ -39,10 +39,10 @@ export const KokardeCard: React.FC<KokardeCardProps> = ({ data }) => {
 
         {/* Judul Kartu */}
         <div className="text-center my-0.5">
-          <h3 className="text-[8.5px] font-bold uppercase leading-tight">
+          <h3 className="text-[14px] font-bold uppercase leading-tight">
             Kartu Peserta Ujian
           </h3>
-          <p className="text-[7.5px] font-bold uppercase leading-tight">
+          <p className="text-[12px] font-bold uppercase leading-tight">
             Tahun Pelajaran 2026/2027
           </p>
         </div>
@@ -64,10 +64,10 @@ export const KokardeCard: React.FC<KokardeCardProps> = ({ data }) => {
         {/* Kotak Nomor Ujian */}
         <div className="flex justify-center my-0.5">
           <div className="border border-black w-32 text-center bg-white">
-            <div className="border-b border-black py-0.5 text-[7.5px] font-bold">
+            <div className="border-b border-black py-0.5 text-[12px] font-bold">
               Nomor Ujian
             </div>
-            <div className="py-0.5 text-[11px] font-black tracking-wider">
+            <div className="py-0.5 text-[12px] font-black tracking-wider">
               {data.nomorUrut || "1 A - 000"}
             </div>
           </div>
